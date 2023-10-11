@@ -71,7 +71,10 @@ public class Menu {
         } while (pm.getById(id) == null);
         System.out.println("Bạn có muốn xóa sản phẩm không(Nhấn 'Y' để đồng ý): ");
         String decision = sc.nextLine().toLowerCase();
-        if (decision.equals("y")) pm.remove(id);
+        if (decision.equals("y")){
+            pm.remove(id);
+            System.out.println("Xóa sản phẩm thành công");
+        }
     }
 
     public void showMenuEdit() {
